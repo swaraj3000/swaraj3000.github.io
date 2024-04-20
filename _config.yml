@@ -1,15 +1,69 @@
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
-include:
-  - CONTRIBUTING.md
-  - README.md
-  - LICENSE.md
-  - COPYING.md
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - ISSUE_TEMPLATE.md
-  - PULL_REQUEST_TEMPLATE.md
+# plugins:
+#   - jekyll-relative-links
+# relative_links:
+#   enabled: true
+#   collections: true
+# include:
+#   - CONTRIBUTING.md
+#   - README.md
+#   - LICENSE.md
+#   - COPYING.md
+#   - CODE_OF_CONDUCT.md
+#   - CONTRIBUTING.md
+#   - ISSUE_TEMPLATE.md
+#   - PULL_REQUEST_TEMPLATE.md
 
+
+title: "Swaraj Kasliwal"
+subtitle: ""
+email: swaraj00710@gmail.com
+description: >- #this means to ignore newlines until "baseurl":
+      Hey there! My name is Swaraj Kasliwal.
+words_per_minute: 200
+search: true
+search_full_content: true
+
+github_username: swaraj3000
+
+#Build Settings
+markdown: kramdown
+highlighter: rouge
+kramdown: 
+  html_to_native: true
+
+#Outputting
+permalink: /:categories/:title/
+paginate: 5 
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+include:
+  - _pages
+  - _portfolio
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+author:
+  name: "Swaraj Kasliwal"
+  avatar: ""
+  bio: "Like to build big model"
+  location: "Pune,India"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:swaraj00710@gmail.com"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/swaraj3000"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/swarajkasliwal"
+
+  
